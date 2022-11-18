@@ -1,0 +1,381 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://modelo.png" type="Texture" id=1]
+[ext_resource path="res://wp2849910.jpg" type="Texture" id=2]
+
+[sub_resource type="Animation" id=1]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Skeleton2D/Torso/Peito/Pecoco:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 21.8 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Skeleton2D/Torso/Peito/BracoD/AnteBracoD:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Skeleton2D/Torso/Peito/BracoE/AnteBracoE:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -6.3 ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "parado"
+length = 4.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Skeleton2D/Torso/Peito:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 17, -268 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Skeleton2D/Torso/Peito:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Skeleton2D/Torso/Peito/BracoE/AnteBracoE:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -37, 95 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Skeleton2D/Torso/Peito/BracoE/AnteBracoE:rotation_degrees")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 1.4, 2.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ -6.0, -20.0, -25.0 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Skeleton2D/Torso/Peito/BracoE/AnteBracoE/MaoE:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -20, 105 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Skeleton2D/Torso/Peito/BracoE/AnteBracoE/MaoE:rotation_degrees")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Skeleton2D/Torso/Peito/Pecoco:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 3, -56 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Skeleton2D/Torso/Peito/Pecoco:rotation_degrees")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 1.3, 2.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 21.8, 15.7, 5.2 ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Skeleton2D/Torso/Peito/BracoD/AnteBracoD:rotation_degrees")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 1.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ -29.1, 0.0 ]
+}
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 960, 540 )
+texture = ExtResource( 2 )
+
+[node name="Monstro" type="Node2D" parent="."]
+modulate = Color( 0.505882, 0.352941, 0.352941, 1 )
+position = Vector2( 821, 641 )
+scale = Vector2( 0.622214, 0.630836 )
+
+[node name="Polígnos" type="Node2D" parent="Monstro"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="PernaD" type="Polygon2D" parent="Monstro/Polígnos"]
+modulate = Color( 0.54902, 0.478431, 0.478431, 1 )
+position = Vector2( -632, 399 )
+texture = ExtResource( 1 )
+skeleton = NodePath("../../Skeleton2D")
+polygon = PoolVector2Array( 903.252, 43.078, 879.675, 89.4195, 894.309, 216.249, 907.317, 239.826, 924.39, 178.85, 925.203, 90.2325, 927.642, 150.395, 878.862, 158.525, 965.854, 222.753, 899.187, 213.81, 909.756, 208.119, 918.699, 199.176, 900, 152.021, 921.951, 134.948, 905.691, 135.761, 883.74, 137.387, 944.716, 205.68, 936.585, 239.013, 903.252, 90.2325 )
+uv = PoolVector2Array( 904, 15, 871, 84, 870, 225, 929, 268, 986, 233, 951, 119, 964, 163, 868, 159, 936, 230, 899.187, 213.81, 909.756, 208.119, 918.699, 199.176, 900, 152.021, 921.951, 134.948, 905.691, 135.761, 883.74, 137.387, 944.716, 205.68, 936.585, 239.013, 903.252, 90.2325 )
+polygons = [ PoolIntArray( 15, 7, 12, 14 ), PoolIntArray( 13, 14, 12, 6 ), PoolIntArray( 7, 2, 9, 10, 12 ), PoolIntArray( 10, 11, 4, 6, 12 ), PoolIntArray( 2, 3, 17, 10, 9 ), PoolIntArray( 11, 16, 17, 10 ), PoolIntArray( 16, 8, 17 ), PoolIntArray( 0, 1, 18 ), PoolIntArray( 0, 18, 5 ), PoolIntArray( 1, 15, 14, 18 ), PoolIntArray( 18, 14, 13, 5 ) ]
+bones = [ "Torso", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/Peito", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/Peito/BracoE", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/Peito/BracoE/AnteBracoE", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/Peito/BracoE/AnteBracoE/MaoE", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/Peito/BracoD", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/Peito/BracoD/AnteBracoD", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/Peito/BracoD/AnteBracoD/MaoD", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/Peito/Pecoco", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/PernaE", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/PernaE/FemurE", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/PernaE/FemurE/CanelaE", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/PernaE/FemurE/CanelaE/PeE", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/PernaD", PoolRealArray( 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5 ), "Torso/PernaD/FemurD", PoolRealArray( 0, 0.5, 0, 0, 0, 0.5, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0.5 ), "Torso/PernaD/FemurD/CanelaD", PoolRealArray( 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0 ), "Torso/PernaD/FemurD/CanelaD/PeD", PoolRealArray( 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0 ) ]
+internal_vertex_count = 13
+
+[node name="BracoD" type="Polygon2D" parent="Monstro/Polígnos"]
+modulate = Color( 0.631373, 0.517647, 0.517647, 1 )
+position = Vector2( -469, 169 )
+rotation = -0.345575
+texture = ExtResource( 1 )
+skeleton = NodePath("../../Skeleton2D")
+invert_border = 0.1
+polygon = PoolVector2Array( 695.935, 320.732, 677.236, 371.138, 678.049, 465.447, 701.626, 522.358, 725.203, 508.537, 718.699, 357.317, 720.325, 455.691, 674.797, 416.667, 719.512, 413.415, 698.374, 411.789, 674.797, 402.846, 695.122, 397.967, 719.512, 397.154, 673.171, 427.236, 693.496, 421.545, 717.886, 423.171, 681.301, 341.87, 710.569, 334.553, 687.805, 491.463, 714.634, 474.39, 700, 480.081 )
+uv = PoolVector2Array( 691, 302, 671, 348, 662, 480, 688, 555, 750, 508, 716, 299, 742, 441, 674.797, 416.667, 719.512, 413.415, 698.374, 411.789, 674.797, 402.846, 695.122, 397.967, 719.512, 397.154, 673.171, 427.236, 693.496, 421.545, 717.886, 423.171, 681.301, 341.87, 710.569, 334.553, 687.805, 491.463, 714.634, 474.39, 700, 480.081 )
+polygons = [ PoolIntArray( 0, 11, 10, 1, 16 ), PoolIntArray( 0, 11, 12, 5, 17 ), PoolIntArray( 10, 7, 9, 11 ), PoolIntArray( 13, 14, 9, 7 ), PoolIntArray( 11, 12, 8, 9 ), PoolIntArray( 15, 8, 9, 14 ), PoolIntArray( 13, 2, 20, 14 ), PoolIntArray( 14, 20, 6, 15 ), PoolIntArray( 6, 19, 20 ), PoolIntArray( 2, 20, 18 ), PoolIntArray( 20, 3, 18 ), PoolIntArray( 19, 4, 20 ), PoolIntArray( 20, 3, 4 ) ]
+bones = [ "Torso", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/Peito", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/Peito/BracoE", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/Peito/BracoE/AnteBracoE", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/Peito/BracoE/AnteBracoE/MaoE", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/Peito/BracoD", PoolRealArray( 1, 1, 0, 0, 0, 1, 0, 0.5, 0.5, 0.5, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0 ), "Torso/Peito/BracoD/AnteBracoD", PoolRealArray( 0, 0, 1, 0, 0, 0, 1, 0.5, 0.5, 0.5, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1 ), "Torso/Peito/BracoD/AnteBracoD/MaoD", PoolRealArray( 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1 ), "Torso/Peito/Pecoco", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/PernaE", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/PernaE/FemurE", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/PernaE/FemurE/CanelaE", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/PernaE/FemurE/CanelaE/PeE", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/PernaD", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/PernaD/FemurD", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/PernaD/FemurD/CanelaD", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/PernaD/FemurD/CanelaD/PeD", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ) ]
+internal_vertex_count = 15
+
+[node name="Corpo" type="Polygon2D" parent="Monstro/Polígnos"]
+texture = ExtResource( 1 )
+skeleton = NodePath("../../Skeleton2D")
+polygon = PoolVector2Array( 242, 139, 151, 208, 129, 372, 191, 523, 276, 534, 356, 441, 362, 268, 300, 147 )
+uv = PoolVector2Array( 253, 120, 151, 208, 129, 372, 191, 523, 292, 541, 356, 441, 381, 262, 300, 147 )
+polygons = [ PoolIntArray( 0, 1, 2, 3, 4, 5, 6, 7 ) ]
+bones = [ "Torso", PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ), "Torso/Peito", PoolRealArray( 0.5, 0.5, 0, 0, 0, 0, 0.5, 0.5 ), "Torso/Peito/BracoE", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/Peito/BracoE/AnteBracoE", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/Peito/BracoD", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/Peito/BracoD/AnteeBracoD", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/Peito/Pecoco", PoolRealArray( 0.5, 0.5, 0, 0, 0, 0, 0, 0.5 ), "Torso/PernaE", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/PernaE/FemurE", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/PernaE/FemurE/CanelaE", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/PernaE/FemurE/CanelaE/PeE", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/PernaD", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/PernaD/FemurD", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/PernaD/FemurD/CanelaD", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/PernaD/FemurD/CanelaD/PeD", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ) ]
+
+[node name="Cabeca" type="Polygon2D" parent="Monstro/Polígnos"]
+position = Vector2( -249, -63 )
+texture = ExtResource( 1 )
+skeleton = NodePath("../../Skeleton2D")
+polygon = PoolVector2Array( 500, 79, 451, 121, 439, 195, 471, 250, 540, 254, 588, 212, 581, 137, 541, 92 )
+uv = PoolVector2Array( 500, 79, 451, 121, 439, 195, 471, 250, 540, 254, 588, 212, 581, 137, 541, 92 )
+polygons = [ PoolIntArray( 1, 2, 3, 4, 5, 6, 7, 0 ) ]
+bones = [ "Torso", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/Peito", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/Peito/BracoE", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/Peito/BracoE/AnteBracoE", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/Peito/BracoD", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/Peito/BracoD/AnteeBracoD", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/Peito/Pecoco", PoolRealArray( 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5 ), "Torso/PernaE", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/PernaE/FemurE", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/PernaE/FemurE/CanelaE", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/PernaE/FemurE/CanelaE/PeE", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/PernaD", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/PernaD/FemurD", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/PernaD/FemurD/CanelaD", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/PernaD/FemurD/CanelaD/PeD", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ) ]
+
+[node name="PernaE" type="Polygon2D" parent="Monstro/Polígnos"]
+modulate = Color( 0.501961, 0.396078, 0.396078, 1 )
+position = Vector2( -506, 414 )
+texture = ExtResource( 1 )
+skeleton = NodePath("../../Skeleton2D")
+polygon = PoolVector2Array( 698, 27, 674, 90, 675, 209, 710, 262, 780, 248, 774, 194, 733, 39, 759, 132, 672, 146 )
+uv = PoolVector2Array( 698, 27, 674, 90, 675, 209, 710, 262, 780, 248, 787, 206, 733, 39, 759, 132, 672, 146 )
+polygons = [ PoolIntArray( 2, 3, 4, 5 ), PoolIntArray( 1, 6, 0 ), PoolIntArray( 1, 8, 7, 6 ), PoolIntArray( 8, 2, 5, 7 ) ]
+bones = [ "Torso", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/Peito", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/Peito/BracoE", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/Peito/BracoE/AnteBracoE", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/Peito/BracoD", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/Peito/BracoD/AnteeBracoD", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/Peito/Pecoco", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/PernaE", PoolRealArray( 1, 1, 0, 0, 0, 0, 1, 0, 0 ), "Torso/PernaE/FemurE", PoolRealArray( 0, 1, 0, 0, 0, 0, 1, 1, 1 ), "Torso/PernaE/FemurE/CanelaE", PoolRealArray( 0, 0, 1, 0, 0, 1, 0, 1, 1 ), "Torso/PernaE/FemurE/CanelaE/PeE", PoolRealArray( 0, 0, 1, 1, 1, 1, 0, 0, 0 ), "Torso/PernaD", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/PernaD/FemurD", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/PernaD/FemurD/CanelaD", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/PernaD/FemurD/CanelaD/PeD", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0 ) ]
+internal_vertex_count = 2
+
+[node name="BracoE" type="Polygon2D" parent="Monstro/Polígnos"]
+modulate = Color( 0.568627, 0.603922, 0.741176, 1 )
+position = Vector2( -319, -95 )
+texture = ExtResource( 1 )
+skeleton = NodePath("../../Skeleton2D")
+polygon = PoolVector2Array( 505.263, 320.066, 487.5, 356.25, 487.5, 461.513, 501.316, 508.882, 520.395, 520.066, 536.184, 497.697, 526.316, 337.829, 482, 420, 505, 418, 531, 417, 492, 404, 518, 401, 494, 429, 517, 428, 496.35, 477.372, 510.219, 473.723, 524.088, 470.073, 494.737, 331.25, 515.132, 322.039 )
+uv = PoolVector2Array( 503, 306, 472, 348, 474, 487, 506, 539, 543, 529, 553, 478, 537, 316, 482, 420, 505, 418, 531, 417, 492, 404, 518, 401, 494, 429, 517, 428, 496.35, 477.372, 510.219, 473.723, 524.088, 470.073, 494.737, 331.25, 515.132, 322.039 )
+polygons = [ PoolIntArray( 1, 0, 6 ), PoolIntArray( 1, 7, 10 ), PoolIntArray( 7, 12, 10 ), PoolIntArray( 10, 8, 12 ), PoolIntArray( 10, 11, 8 ), PoolIntArray( 11, 8, 9 ), PoolIntArray( 8, 13, 9 ), PoolIntArray( 12, 8, 13 ), PoolIntArray( 6, 10, 1 ), PoolIntArray( 11, 6, 10 ), PoolIntArray( 9, 6, 11 ), PoolIntArray( 1, 17, 0, 18, 6 ), PoolIntArray( 7, 2, 12 ), PoolIntArray( 2, 14, 12 ), PoolIntArray( 2, 3, 14 ), PoolIntArray( 14, 4, 3 ), PoolIntArray( 15, 14, 4 ), PoolIntArray( 12, 15, 14 ), PoolIntArray( 13, 15, 12 ), PoolIntArray( 9, 16, 15, 13 ), PoolIntArray( 16, 5, 15 ), PoolIntArray( 5, 4, 15 ) ]
+bones = [ "Torso", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/Peito", PoolRealArray( 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1 ), "Torso/Peito/BracoE", PoolRealArray( 1, 1, 0, 0, 0, 0, 1, 0.5, 1, 0.5, 1, 1, 0.5, 0.5, 0, 0, 0, 1, 1 ), "Torso/Peito/BracoE/AnteBracoE", PoolRealArray( 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 0.5, 0.5, 1, 1, 1, 1, 1, 0, 0 ), "Torso/Peito/BracoE/AnteBracoE/MaoE", PoolRealArray( 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0 ), "Torso/Peito/BracoD", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/Peito/BracoD/AnteBracoD", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/Peito/BracoD/AnteBracoD/MaoD", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/Peito/Pecoco", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/PernaE", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/PernaE/FemurE", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/PernaE/FemurE/CanelaE", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/PernaE/FemurE/CanelaE/PeE", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/PernaD", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/PernaD/FemurD", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/PernaD/FemurD/CanelaD", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Torso/PernaD/FemurD/CanelaD/PeD", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ) ]
+internal_vertex_count = 12
+
+[node name="Skeleton2D" type="Skeleton2D" parent="Monstro"]
+position = Vector2( 244, 308 )
+
+[node name="Torso" type="Bone2D" parent="Monstro/Skeleton2D"]
+position = Vector2( -3, 149 )
+rest = Transform2D( 1, 0, 0, 1, -3, 149 )
+default_length = 312.0
+__meta__ = {
+"_edit_bone_": true,
+"_edit_ik_": true
+}
+
+[node name="Peito" type="Bone2D" parent="Monstro/Skeleton2D/Torso"]
+position = Vector2( 17, -268 )
+rest = Transform2D( 0.996637, -0.0819477, 0.0819477, 0.996637, 17, -268 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="BracoE" type="Bone2D" parent="Monstro/Skeleton2D/Torso/Peito"]
+position = Vector2( -74.8718, 31.972 )
+rotation = 0.071792
+rest = Transform2D( 0.997424, 0.0717304, -0.0717304, 0.997424, -74.8718, 31.972 )
+__meta__ = {
+"_edit_bone_": true,
+"_edit_ik_": true
+}
+
+[node name="AnteBracoE" type="Bone2D" parent="Monstro/Skeleton2D/Torso/Peito/BracoE"]
+position = Vector2( -37, 95 )
+rotation = -0.109956
+rest = Transform2D( 0.950811, -0.309772, 0.309772, 0.950811, -25.0424, 109.315 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="MaoE" type="Bone2D" parent="Monstro/Skeleton2D/Torso/Peito/BracoE/AnteBracoE"]
+position = Vector2( -20, 105 )
+rest = Transform2D( 0.999692, -0.0248352, 0.0248352, 0.999692, 32.9295, 68.8524 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="BracoD" type="Bone2D" parent="Monstro/Skeleton2D/Torso/Peito"]
+position = Vector2( 45.8031, 40.891 )
+rotation = 0.13024
+rest = Transform2D( 0.991531, 0.129872, -0.129872, 0.991531, 45.8031, 40.891 )
+__meta__ = {
+"_edit_bone_": true,
+"_edit_ik_": true
+}
+
+[node name="AnteBracoD" type="Bone2D" parent="Monstro/Skeleton2D/Torso/Peito/BracoD"]
+position = Vector2( 11.9971, 110.354 )
+rest = Transform2D( 0.708647, -0.705563, 0.705563, 0.708647, 11.9971, 110.354 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="MaoD" type="Bone2D" parent="Monstro/Skeleton2D/Torso/Peito/BracoD/AnteBracoD"]
+position = Vector2( 3.4436, 52.2124 )
+rotation = 1.26304
+rest = Transform2D( 0.302919, 0.953016, -0.953016, 0.302919, 3.4436, 52.2124 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="Pecoco" type="Bone2D" parent="Monstro/Skeleton2D/Torso/Peito"]
+position = Vector2( 3, -56 )
+rotation = 0.380482
+rest = Transform2D( 0.928486, 0.371368, -0.371368, 0.928486, 3, -56 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="PernaE" type="Bone2D" parent="Monstro/Skeleton2D/Torso"]
+position = Vector2( -39, 23 )
+rotation = -0.0339756
+rest = Transform2D( 0.999423, -0.033969, 0.033969, 0.999423, -39, 23 )
+__meta__ = {
+"_edit_bone_": true,
+"_edit_ik_": true
+}
+
+[node name="FemurE" type="Bone2D" parent="Monstro/Skeleton2D/Torso/PernaE"]
+position = Vector2( 2, 79 )
+rotation = 0.625533
+rest = Transform2D( 0.810651, 0.585529, -0.585529, 0.810651, 2, 79 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="CanelaE" type="Bone2D" parent="Monstro/Skeleton2D/Torso/PernaE/FemurE"]
+position = Vector2( 0, 64 )
+rotation = -0.806824
+rest = Transform2D( 0.691796, -0.722093, 0.722093, 0.691796, 0, 64 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="PeE" type="Bone2D" parent="Monstro/Skeleton2D/Torso/PernaE/FemurE/CanelaE"]
+position = Vector2( 43, 22 )
+rotation = 0.198488
+rest = Transform2D( 0.980366, 0.197187, -0.197187, 0.980366, 43, 22 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="PernaD" type="Bone2D" parent="Monstro/Skeleton2D/Torso"]
+position = Vector2( 26, 23 )
+rotation = -0.279505
+rest = Transform2D( 0.961192, -0.27588, 0.27588, 0.961192, 26, 23 )
+__meta__ = {
+"_edit_bone_": true,
+"_edit_ik_": true
+}
+
+[node name="FemurD" type="Bone2D" parent="Monstro/Skeleton2D/Torso/PernaD"]
+position = Vector2( 10, 66 )
+rotation = 0.715898
+rest = Transform2D( 0.754504, 0.656295, -0.656295, 0.754504, 10, 66 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="CanelaD" type="Bone2D" parent="Monstro/Skeleton2D/Torso/PernaD/FemurD"]
+position = Vector2( 3, 50 )
+rotation = 0.726485
+rest = Transform2D( 0.747514, 0.664246, -0.664246, 0.747514, 3, 50 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="PeD" type="Bone2D" parent="Monstro/Skeleton2D/Torso/PernaD/FemurD/CanelaD"]
+position = Vector2( 39, 4 )
+rotation = -1.19453
+rest = Transform2D( 0.367448, -0.930044, 0.930044, 0.367448, 39, 4 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Monstro"]
+autoplay = "parado"
+anims/RESET = SubResource( 1 )
+anims/parado = SubResource( 2 )
